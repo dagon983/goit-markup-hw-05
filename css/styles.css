@@ -674,7 +674,7 @@ header {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
