@@ -665,6 +665,10 @@ header {
     border-color: #4D5AE5;
 }
 
+.modal-checkbox {
+    margin-bottom: 24px;
+}
+
 .user-agreement-label {
     font-size: 12px;
     line-height: 1.2;
@@ -699,10 +703,6 @@ header {
     fill: #F4F4FD;
 }
 
-
-
-
-
 .submit-btn {
     display: block;
     width: 169px;
@@ -719,5 +719,4 @@ header {
     letter-spacing: 0.04em;
     text-align: center;
     color: #ffffff;
-    margin-top: 24px;
 }

@@ -549,21 +549,25 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <label for="user-agreement" class="user-agreement-label"
-            ><span
-              ><svg width="10" height="8" class="checkmark-icon">
-                <use href="./images/icons.svg#icon-checkmark"></use></svg></span
-            >I accept the terms and conditions of the&nbsp;
-            <a href="">Privacy Policy</a></label
-          >
-          <input
-            type="checkbox"
-            name="user-agreement"
-            id="user-agreement"
-            class="user-agreement-input visually-hidden"
-            value="accepted-user-agreement"
-            required
-          />
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="user-agreement"
+              id="user-privacy"
+              class="user-agreement-input visually-hidden"
+              value="accepted-user-agreement"
+              required
+            />
+            <label for="user-privacy" class="user-agreement-label"
+              ><span
+                ><svg width="10" height="8" class="checkmark-icon">
+                  <use
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use></svg></span
+              >I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
           <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>
