@@ -468,6 +468,7 @@ header {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    margin-left: 80px;
 }
 
 .footer-form {
@@ -475,11 +476,6 @@ header {
     align-items: flex-end;
     margin-left: 80px;
     gap: 24px;
-}
-
-.footer-form-wrap {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-form-input {
