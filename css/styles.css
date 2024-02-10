@@ -548,26 +548,29 @@ header {
     background-color: #FCFCFC;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F, 0px 2px 1px 0px #00000033;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
-    display: block;
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     border-radius: 50%;
     background-color: #E7E9FC;
     border: 1px solid #0000001A; 
     width: 24px;
     height: 24px;  
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
-.model-close-btn:focus {
+.modal-close-btn:focus {
     background-color:#404BBF;
     border: none;
 }
@@ -578,7 +581,7 @@ header {
 }
 
 .modal-close-btn:hover .modal-close-icon,
-.model-close-btn:focus .modal-close-icon {
+.modal-close-btn:focus .modal-close-icon {
     fill: #ffffff;
 }
 
@@ -594,7 +597,7 @@ header {
 
 .modal-label {
     display: block;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     font-size: 12px;
@@ -609,10 +612,12 @@ header {
     width: 100%;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 11px 38px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
 } 
 
 .modal-input-wrap {
@@ -622,7 +627,7 @@ header {
 .modal-icon {
     fill: #2E2F42;  
     position: absolute;
-    left: 19px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -635,23 +640,29 @@ header {
     fill: #4D5AE5;
 }
 
+.modal-field-textarea {
+    margin-bottom: 16px;
+}
+
 .modal-textarea {
     min-height: 120px;
     width: 100%;
     resize: none;
     border-radius: 4px;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
     margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea::placeholder {
-    
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: #2E2F42;
-    
+.modal-textarea:focus {
+    border-color: #4D5AE5;
 }
 
 .user-agreement-label {
