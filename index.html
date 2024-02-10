@@ -469,23 +469,26 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <div class="footer-form-wrap">
-            <label for="footer-user-mail" class="footer-label">Subscribe</label>
-            <input
-              type="email"
-              class="footer-form-input"
-              name="footer-user-mail"
-              id="footer-user-mail"
-              placeholder="E-mail"
-            />
-          </div>
-          <button type="submit" class="footer-form-btn">
-            Subscribe<svg width="24" height="20" class="btn-icon">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="form-container">
+          <p class="footer-subscribe">Subscribe</p>
+          <form class="footer-form">
+            <div class="footer-form-wrap">
+              <label class="footer-label">
+                <input
+                  type="email"
+                  class="footer-form-input"
+                  name="footer-user-mail"
+                  placeholder="E-mail"
+                />
+              </label>
+            </div>
+            <button type="submit" class="footer-form-btn">
+              Subscribe<svg width="24" height="24" class="btn-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop">
@@ -506,22 +509,8 @@
                 name="user-name"
                 class="modal-input"
               />
-              <svg class="modal-icon" width="12" heigh="12">
+              <svg class="modal-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-username"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label for="user-email" class="modal-label">Email</label>
-            <div class="modal-input-wrap">
-              <input
-                type="email"
-                id="user-email"
-                name="user-email"
-                class="modal-input"
-              />
-              <svg class="modal-icon" width="13" heigh="13">
-                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -534,8 +523,22 @@
                 name="user-phone"
                 class="modal-input"
               />
-              <svg class="modal-icon" width="15" heigh="12">
+              <svg class="modal-icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
